@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const BestCollection = () => {
   return (
@@ -15,9 +16,11 @@ const BestCollection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {/* White Wood */}
           <div className="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 bg-white">
-            <img
-              src="/images/img1.jpg" // Replace with actual image path
+            <Image
+              src="/images/img1.jpg"
               alt="Redolence Arabia White Wood"
+              width={400}
+              height={256}
               className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -28,9 +31,11 @@ const BestCollection = () => {
 
           {/* Musk-ul-Jism */}
           <div className="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 bg-white">
-            <img
-              src="/images/img2.jpg" // Replace with actual image path
+            <Image
+              src="/images/img2.jpg"
               alt="Redolence Arabia Musk-ul-Jism"
+              width={400}
+              height={256}
               className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -41,9 +46,11 @@ const BestCollection = () => {
 
           {/* Amber Oasis */}
           <div className="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 bg-white">
-            <img
-              src="/images/img3.jpg" // Replace with actual image path
+            <Image
+              src="/images/img3.jpg"
               alt="Redolence Arabia Amber Oasis"
+              width={400}
+              height={256}
               className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -54,9 +61,11 @@ const BestCollection = () => {
 
           {/* Saffron Bloom */}
           <div className="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 bg-white">
-            <img
-              src="/images/img4.jpg" // Replace with actual image path
+            <Image
+              src="/images/img4.jpg"
               alt="Redolence Arabia Saffron Bloom"
+              width={400}
+              height={256}
               className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

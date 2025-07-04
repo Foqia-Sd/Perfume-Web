@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { NextRequest, NextResponse } from 'next/server';
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
@@ -55,4 +56,5 @@ export async function POST(req: NextRequest) {
     console.error('Internal server error:', err);
     return NextResponse.json({ error: 'Internal server error', details: err?.message }, { status: 500 });
   }
-} 
+}
+/* eslint-enable @typescript-eslint/no-explicit-any */ 
