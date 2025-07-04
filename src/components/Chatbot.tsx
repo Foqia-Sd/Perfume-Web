@@ -40,7 +40,10 @@ const Chatbot: React.FC = () => {
       }
       const data = await res.json();
       setMessages((msgs) => [...msgs, { role: 'assistant', text: data.reply }]);
-    } catch (err: any) {
+    } catch (
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      err: any
+    ) {
       setError(err.message || 'Something went wrong.');
     } finally {
       setLoading(false);

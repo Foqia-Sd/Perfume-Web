@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
     let data;
     try {
       data = await geminiRes.json();
-    } catch (jsonErr) {
+    } catch {
       const text = await geminiRes.text();
       console.error('Gemini API non-JSON response:', text);
       return NextResponse.json({ error: 'Gemini API returned non-JSON response', details: text }, { status: 500 });
